@@ -146,6 +146,15 @@ tools/            索引生成与检索脚本
 3. 有「边界与提醒」，写清适用边界
 4. 跑过一次 `python tools/build_index.py` 刷新索引
 
+### 推送到 GitHub
+
+```bash
+bash tools/push_to_github.sh <github用户名> <仓库名>
+```
+
+首次使用需先在本机添加 SSH 公钥到 GitHub 账号（`cat ~/.ssh/id_ed25519.pub`），
+并在 GitHub 网页创建一个空仓库（不要勾选 README / .gitignore）。
+
 ## License
 
 MIT，见 [LICENSE](LICENSE)。
